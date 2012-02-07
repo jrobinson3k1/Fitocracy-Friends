@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/user_card_background"
+        android:padding="10dp">
+        
+        <ProgressBar
+            android:id="@+id/user_progress_ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />"
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+		    
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" >
+		
+		        <ImageView
+		            android:id="@+id/user_pic_ImageView"
+		            android:layout_width="100dp"
+		            android:layout_height="100dp"
+		            android:scaleType="centerInside" />
+		
+		        <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="5dp"
+		            android:orientation="vertical">
+			        
+			        <TextView
+			            android:id="@+id/user_name_TextView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="0dp"
+			            android:layout_weight="1"
+			            android:textSize="18sp"
+			            android:textColor="@android:color/black"
+			            android:textStyle="bold" />
+			        
+			        <TextView
+			            android:id="@+id/user_level_TextView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="0dp"
+			            android:layout_weight="1"
+			            android:gravity="center_vertical"
+			            android:textSize="18sp"
+			            android:textColor="@android:color/black" />
+			        
+			        <TextView
+			            android:id="@+id/user_progress_TextView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="0dp"
+			            android:layout_weight="1"
+			            android:gravity="bottom"
+			            android:textSize="18sp"
+			            android:textColor="@android:color/black" />
+		        </LinearLayout>
+		
+		    </LinearLayout>
+		    
+	        <TextView
+	            android:id="@+id/user_about_TextView"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:textSize="18sp"
+	            android:textColor="@android:color/black"
+	            android:textStyle="italic" />
+	    
+	    </LinearLayout>
+    
+    </RelativeLayout>
+
+</LinearLayout>
